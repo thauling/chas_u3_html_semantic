@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center; /* perhaps not needed */
+    justify-content: center;
+}
+
+#main-container {
+    display: grid;
+    background-color: lightgray;
+    width: 70%;
+}
+
+header {
+    grid-column: 1 / 5; /* seems to be inclusive to non-inclusiv */
+    grid-row: 1;
+    
+    /*resize: horizontal; */
+}
+
+/* #header-image {
+    max-width: 100%;
+    clip-path: inset(400px 0px);
+    margin: -400px 0 -400px 0;
+} */
+
+#header-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    max-width: 90%;
+}
+
+/*
+#content-container {
+    display: grid;
+    
+}
+*/
+
+main {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    max-width: 70%;
+}
+
+h1 {
+    background-color: gray;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+article {
+    background-color: gray;
+}
+
+#section-footer {
+    background-color: gray;
+    font-size: x-large;
+}
+
+aside {
+    background-color: gray;
+}
+
+#aside-left {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: large;
+    margin: 0 20% 0 10%;
+}
+
+#aside-right {
+    grid-column: 4;
+    grid-row: 2;
+    margin: 0 10% 0 20%;
+}
+
+footer{
+    grid-column: 1 / 5;  
+    grid-row: 3; 
+    max-width: 90%;
+    /*position: absolute;
+    bottom: 0; */
+    background-color: gray;
+    margin: 0 0 0 0;
+    font-size: x-large;
+}
+
+#footer-text {
+    padding: 0 0 0 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .body {
+      margin: 1em 2em;
+    }
+  }
