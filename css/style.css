@@ -1,8 +1,15 @@
+/* want to use this but screws up the layout
+:root {
+    --main-bg-color: rgb(225, 225, 225);
+    --sub-bg-color: rgb(185, 185, 185);
+    */
+
 body {
     display: flex; 
     width: 100%;
     gap: 10px;
     text-decoration: none;
+    font-size: small;
     color: black;
     background-color: white;
     align-items: center; /* perhaps not needed */
@@ -14,12 +21,12 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* center */
     /*align-content: flex-start; */
-    background-color: lightgray;
-    width: 70%;
+    background-color: rgb(225, 225, 225);
+    width: 45%;
 }
 
 header {
-   background-color: darkgray;
+   background-color: rgb(225, 225, 225);
 }
 
 /* #header-image {
@@ -47,35 +54,48 @@ header img {
     align-items: flex-start;
     justify-content: center;
     gap: 2%;
-    background-color: rgb(84, 236, 117);
+    background-color: rgb(225, 225, 225);
+
 }
 
 
 main {
     /* grid-column: 2 / 4;
     grid-row: 2; */
-    max-width: 60%;
-    background-color: darkgray;
+    max-width: 46%;
+    background-color: rgb(225, 225, 225);
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 
 article {
-    background-color: gray;
+    background-color: rgb(180, 180, 180);
+}
+
+#article2 {
+    margin-top: 20px;
+
 }
 
 #section-footer {
-    background-color: gray;
+    background-color: rgb(180, 180, 180);
     font-size: x-large;
+    margin-top: 42px;
 }
 
 aside {
-    background-color: rgb(240, 12, 12);
-    align-content: flex-start;
-    justify-content: flex-start;
-    max-width: 20%;
+    background-color: rgb(180, 180, 180);
+    width: 14%;
     height: 500px;
     
+}
+
+.aside-container {
+    position: relative;
+    left: 10px;
 }
 
 #aside-left {
@@ -85,6 +105,14 @@ aside {
     margin: 0 0 0 0; /* remove last semi colon? */
 }
 
+#aside-container-left {
+    position: relative;
+    top: 10px;
+}
+
+.nav-item {
+    padding: 0 0 10px 0;
+}
 #aside-right {
     /* grid-column: 4;
     grid-row: 2; */
@@ -94,9 +122,9 @@ aside {
 footer{
     /* grid-column: 1 / 5;  
     grid-row: 3;  */
-    max-width: 82%;
-    background-color: rgb(37, 8, 117);
-    margin: 1% 0 0 9%;
+    max-width: 78%;
+    background-color: rgb(180, 180, 180);
+    margin: 2% 0 0 11%;
     font-size: x-large;
 }
 
@@ -106,7 +134,7 @@ footer{
 
 
 h1 {
-    background-color: white;
+    background-color: rgb(180, 180, 180);
     margin-top: -0.1%;
 }
 
@@ -116,18 +144,54 @@ h2 {
 
 h3 {
     font-weight: bold;
+    margin-bottom: 1%;
 }
 
 li {
+    color:black;
+    font-weight: bold;
+    display: list-item;
     list-style: none;
+    text-align: left; 
+    list-style-position: outside; 
 }
-
+/*
 a {
     text-decoration: none;
+    color: black;     
+    list-style-position: outside; 
 }
 
+
+ul {
+    display: list-item;
+    list-style: none;
+    list-style-position: outside;
+
+}
+
+*/
+hr { 
+    width: 60px;
+    margin: 20px 0 0 0;
+    height: 2px;
+    background-color:black;
+    border: none;
+}
+
+/* 
 @media screen and (min-width: 800px) {
     .body {
       margin: 1em 2em;
     }
   }
+*/
+
+/*
+  /* for smartphone devices 
+ @media screen and (max-width: 400px) {
+    .body {
+      margin: 1em 2em;
+    }
+  } 
+ */
