@@ -30,13 +30,21 @@
   <div id="content-container"> <!-- contains asides plus main -->
 
     <aside id="aside-left">
-      <nav>
+    <div class="aside-container" id="aside-container-left">
+     <nav>
+      <li class="nav-item"href="#">Start</li>
+      <li class="nav-item"href="#">Articles</li>
+      <li class="nav-item"href="#">About</li>
+     
+     <!--
       <ul>
-        <li><a href="#">Start </a></li>
-        <li><a href="#">Articles </a></li>
-        <li><a href="#">About</a></li>
+        <li href="#">Start</li>
+        <li href="#">Articles</li>
+        <li href="#">About</li>
       </ul>
+      --> 
     </nav>
+    </div>
     </aside>
 
 
@@ -50,7 +58,7 @@
       </p>
     </article>
     
-    <article>
+    <article id="article2">
       <h2>Article 2</h2>
       <p>
       Ullamco tempor anim et excepteur sit ullamco magna enim aliqua sit. Ea quis non duis qui laboris. Ea velit sit anim ex nulla esse laboris ex quis cupidatat aliquip ad veniam cillum. Sunt commodo eiusmod velit ipsum eiusmod nostrud aliquip sint. Ad id incididunt velit ut. Minim minim excepteur do magna irure elit amet nisi.
@@ -63,17 +71,29 @@
     </main>
 
     <aside id="aside-right"> 
+    <div class="aside-container"> 
       <h2>Related</h2>
         <h3>Top links</h3>
+        <li href="http://google">link 1</li>
+        <li href="http://google">link 2</li>
+        <!--
         <ul>
-        <li><a href="http://google">link 1</a></li>
-        <li><a href="http://google">link 2</a></li>
+        <li href="http://google">link 1</li>
+        <li href="http://google">link 2</li>
         </ul>
+        -->
+        <!-- break line -->
+        <hr></hr>
         <h3>Other links</h3>
+        <li href="http://google">link 1</li>
+        <li href="http://google">link 2</li>
+        <!--
         <ul>
-        <li><a href="http://google">link 1</a></li>
-        <li><a href="http://google">link 2</a></li>
+        <li href="http://google">link 1</li>
+        <li href="http://google">link 2</li>
         </ul>
+        -->
+        </div>
     </aside>
 
   </div> <!-- end of content-container -->
