@@ -3,6 +3,18 @@
     --main-bg-color: rgb(225, 225, 225);
     --sub-bg-color: rgb(185, 185, 185);
     */
+    
+/*  should do this but screws up the layout with current setting
+ browser reset  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ browser reset end 
+ */
 
 body {
     display: flex; 
@@ -155,6 +167,13 @@ li {
     text-align: left; 
     list-style-position: outside; 
 }
+
+hr { 
+    width: 60px;
+    margin: 20px 0 0 0;
+    height: 2px;
+    border: none; 
+}
 /*
 a {
     text-decoration: none;
@@ -171,12 +190,24 @@ ul {
 }
 
 */
-hr { 
-    width: 60px;
-    margin: 20px 0 0 0;
-    height: 2px;
-    background-color:black;
-    border: none;
+
+table, td, th {
+    /*background: white; */ /* will override thead, tfoot */
+    border-collapse: collapse; 
+    border: 1px solid lightgray;
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+th, td {
+    width: 100px;
+}
+
+thead, tfoot {
+    background: rgb(236, 236, 236);
 }
 
 /* 
